@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1; /* Light beige background */
+  }
+  
+  header {
+    background: linear-gradient(90deg, #e0ac69, #f4c182); /* Gradient from light to darker brown */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  #searchBar {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #loginBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #8c6b4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #loginBtn:hover {
+    background-color: #725a3b;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #bookDetails {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background: linear-gradient(90deg, #e0ac69, #f4c182); /* Gradient from light to darker brown */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #cartList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cartList li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button {
+    background-color: #8c6b4e; /* Dark brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #725a3b; /* Darker brown on hover */
+    transform: translateY(-2px);
+  }
+  
+  #pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  #pagination button {
+    margin: 0 1rem;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    #searchBar {
+      width: 95%;
+    }
+    
+    .book {
+      width: 150px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  
+    #bookDetails img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 0.5rem;
+    }
+  
+    #searchBar {
+      width: 90%;
+      padding: 0.4rem;
+    }
+  
+    .book {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  
+    #bookDetails {
+      padding: 1rem;
+    }
+  
+    footer {
+      padding: 0.5rem;
+    }
+  
+    #bookDetails img {
+      width: 100%;
+    }
+  }
+  

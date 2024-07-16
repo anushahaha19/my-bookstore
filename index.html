@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Bookstore</h1>
+    <input type="text" id="searchBar" placeholder="Search for books...">
+    <button id="loginBtn">Login</button>
+  </header>
+
+  <main id="bookList">
+    <!-- Books will be dynamically added here -->
+  </main>
+
+  <div id="pagination">
+    <button id="prevPage">Previous</button>
+    <span id="pageNum">1</span>
+    <button id="nextPage">Next</button>
+  </div>
+
+  <div id="bookDetails" class="hidden">
+    <h2 id="bookTitle"></h2>
+    <h3 id="bookAuthor"></h3>
+    <img id="bookImage" src="" alt="Book Image">
+    <p id="bookDescription"></p>
+    <p id="bookPrice"></p>
+    <button id="addToCart">Add to Cart</button>
+    <button id="backToList">Back to List</button>
+  </div>
+
+  <footer>
+    <h2>Shopping Cart</h2>
+    <ul id="cartList">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p>Total Price: <span id="totalPrice">₹0.00</span></p>
+  </footer>
+
+  <div id="authModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button id="authBtn">Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
